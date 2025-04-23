@@ -1,0 +1,65 @@
+<header class="bg-gradient-to-b from-slate-50 via-slate-50 to-slate-200">
+  <div class="container">
+    <div class="flex gap-6 justify-between items-center py-4">
+      <h1>
+        <a href="/index.html">
+          {% include "masthead.njk" %}
+        </a>
+      </h1>
+      <button @click="navActive = !navActive" class="border border-oxley-500 p-2 ring-0 hover:ring-4 transition ring-oxley-200 rounded-md md:hidden bg-white" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <div class="hidden md:block text-lg text-right">
+        <p class="font-serif font-medium">Help is just a call away. <i class="font-semibold text-oxley-700 block lg:inline">Short Wait Times</i></p>
+        <small>
+          Call today to book an appointment: <a href="tel:+15192530333" class="text-ochre-600 block lg:inline text-lg font-semibold">519-253-0333</a>
+        </small>
+      </div>
+    </div>
+  </div> <!-- container -->
+  <div class="relative">
+    <nav
+      class="absolute left-0 w-full bg-maroon-700 text-white z-10 md:hidden py-4 shadow-grey-900 shadow-2xl"
+      x-show="navActive"
+      x-transition:enter="transition ease-out duration-300" 
+      x-transition:enter-start="opacity-0 transform -translate-y-2" 
+      x-transition:enter-end="opacity-100 transform translate-y-0"
+      x-transition:leave="transition ease-in duration-200" 
+      x-transition:leave-start="opacity-100 transform translate-y-0" 
+      x-transition:leave-end="opacity-0 transform -translate-y-2"
+    >
+      <ul class="font-serif text-xl">
+        <li><a class="py-2 px-4 block hover:bg-maroon-500 hover:text-ochre-400 transition" href="/">Home</a></li>
+        <li><a class="py-2 px-4 block hover:bg-maroon-500 hover:text-ochre-400 transition" href="/about">About</a></li>
+        <li><a class="py-2 px-4 block hover:bg-maroon-500 hover:text-ochre-400 transition" href="/services">Services</a></li>
+        <li><a class="py-2 px-4 block hover:bg-maroon-500 hover:text-ochre-400 transition" href="/team">Team</a></li>
+        <li><a class="py-2 px-4 block hover:bg-maroon-500 hover:text-ochre-400 transition" href="/contact">Contact</a></li>
+      </ul>
+      <hr class="my-4 border-ochre-400" />
+      <div class="px-4">
+        <p class="text-maroon-100">Call today to book an appointment:</p>
+        <p class="text-2xl font-serif">
+          <a href="tel:+15192530333">519-253-0333</a>
+        </p>
+      </div>
+    </nav>
+  </div>
+  <nav id="desktop-nav" class="hidden md:block text-white font-medium uppercase tracking-wide bg-gradient-to-b from-oxley-600 to-oxley-700">
+    <ul class="container flex justify-between text-center">
+      <li class="grow">
+        <a class="block py-2 hover:bg-oxley-700 transition" href="/about">About</a>
+      </li>
+      <li class="grow">
+        <a class="block py-2 hover:bg-oxley-700 transition" href="/services">Services</a>
+      </li>
+      <li class="grow">
+        <a class="block py-2 hover:bg-oxley-700 transition" href="/team">Team</a>
+      </li>
+      <li class="grow">
+        <a class="block py-2 hover:bg-oxley-700 transition" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>

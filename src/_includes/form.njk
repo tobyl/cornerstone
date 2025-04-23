@@ -1,0 +1,71 @@
+<form id="contactForm" class="bg-ochre-50 p-4" action="https://formspree.io/f/mvgaprky" method="POST">
+  <div id="innerForm">
+    <div class="field">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Smith" />
+    </div>
+    <div class="field">
+      <label for="name">Email:</label>
+      <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com" />
+    </div>
+    <div class="field">
+      <label for="name">Phone:</label>
+      <input type="phone" id="phone" name="phone" required autocomplete="phone" placeholder="5191234567" />
+    </div>
+    <div class="field multi-checkbox">
+      <label for="name">Primary concern:</label>
+      <div class="grid lg:grid-cols-2">
+        <label for="depression">
+          <input id="depression" type="checkbox" name="depression" /> Depression
+        </label>
+        <label for="substance_abuse">
+          <input id="substance_abuse" type="checkbox" name="substance_abuse" /> Substance Abuse
+        </label>
+        <label for="family_issues">
+          <input id="family_issues" type="checkbox" name="family_issues" /> Family Issues
+        </label>
+        <label for="anger_management">
+          <input id="anger_management" type="checkbox" name="anger_management" /> Anger Management
+        </label>
+        <label for="child_behaviour">
+          <input id="child_behaviour" type="checkbox" name="child_behaviour" /> Child Behaviour Issues
+        </label>
+        <label for="trauma">
+          <input id="trauma" type="checkbox" name="trauma" /> Trauma
+        </label>
+        <label for="autism">
+          <input id="autism" type="checkbox" name="autism" /> Autism Disorders
+        </label>
+        <label for="anxiety">
+          <input id="anxiety" type="checkbox" name="anxiety" /> Anxiety
+        </label>
+        <label for="child_learning_disabilities">
+          <input id="child_learning_disabilities" type="checkbox" name="child_learning_disabilities"> Child Learning Disabilities
+        </label>
+        <label for="couples_counselling">
+          <input id="couples_counselling" type="checkbox" name="couples_counselling" /> Couples Counselling
+        </label>
+        <label for="child_psychology">
+          <input id="child_psychology" type="checkbox" name="child_psychology" /> Child Psychological Assessment
+        </label>
+        <label for="bereavement">
+          <input id="bereavement" type="checkbox" name="bereavement" /> Bereavement/Grief/Loss
+        </label>
+        <label for="adhd">
+          <input id="adhd" type="checkbox" name="adhd" /> ADHD Support
+        </label>
+        <label for="other">
+          <input id="other" type="checkbox" name="other" /> Other
+        </label>
+      </div>
+    </div>
+    <div class="field">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+    <button type="submit" class="bg-oxley-600 text-white p-2 mt-4 rounded-md hover:bg-oxley-700 transition">
+      Submit
+    </button>
+  </div>
+  <p id="my-form-status"></p>
+</form>
