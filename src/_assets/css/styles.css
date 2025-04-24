@@ -225,7 +225,7 @@ dialog[open].fade-in {
 /* about bullet list */
 
 #about-bullet-list li {
-  @apply relative pl-9 text-maroon-1000;
+  @apply relative pl-9 text-maroon-900;
 }
 
 #about-bullet-list li:before {
