@@ -8,5 +8,6 @@ module.exports = {
 		"twitter": "@chrissy_dev",
 		"opengraph_default": "/static/img/opengraph-default.webp"
 	},
-	"env": process.env.ELEVENTY_ENV === 'production'
+	env: isProd ? 'prod' : 'dev',
+  baseurl: isProd ? '/cornerstone' : '',
 }

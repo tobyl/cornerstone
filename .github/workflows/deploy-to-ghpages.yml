@@ -1,5 +1,8 @@
 name: Deploy to GitHub Pages
 
+env:
+  ELEVENTY_ENV: production
+
 on:
   push:
     branches:
