@@ -12,6 +12,6 @@ module.exports = () => {
 			"opengraph_default": "/static/img/opengraph-default.webp"
 		},
 		env: isProd ? 'prod' : 'dev',
-		baseurl: isProd ? '/cornerstone' : '',
+		// baseurl: isProd ? '/cornerstone' : '',
 	}
 }

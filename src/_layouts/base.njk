@@ -16,7 +16,7 @@
         {{ content | safe }}
         {% include "footer.njk" %}
     </body>
-    <script src="/static/build/scripts.min.js" defer></script>
+    <script src="{{ site.baseurl }}/static/build/scripts.min.js" defer></script>
     <script>
         const currentPath = window.location.pathname.replace(/\/+$/, "")
         const navLinks = document.querySelectorAll("#desktop-nav a")
