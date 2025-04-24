@@ -5,7 +5,7 @@ module.exports = () => {
 		"title": "Cornerstone Family Care",
 		"description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PostCSS and esbuild",
 		"url": "https://cornerstonecare.ca",
-		"baseurl": "/cornerstone",
+		// "baseurl": "/cornerstone",
 		"author": "Toby Leftly",
 		"meta_data": {
 			"twitter": "@tobyleftly",
