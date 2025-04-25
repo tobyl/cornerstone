@@ -21,8 +21,66 @@
     >
       <div class="flex items-center justify-between space-x-4">
           <h1 class="text-xl font-medium text-gray-800 ">
-            <p>Heather Hallam-Helbich</p>
-            <span class="text-sm font-normal text-gray-500">Clinical Director, C. Psych. CTS</span>
+            <div x-show="modalMember == 'heather'">
+              <p>Heather Hallam-Helbich</p>
+              <span class="text-sm font-normal text-gray-500">Clinical Director, C. Psych. CTS</span>
+            </div>
+            <div x-show="modalMember == 'carl'">
+              <p>Carl Helbich, MMI</p>
+              <span class="text-sm font-normal text-gray-500">Administrative Director</span>
+            </div>
+            <div x-show="modalMember == 'amy'">
+              <p>Amy Wilson</p>
+              <span class="text-sm font-normal text-gray-500">Clinic Manager</span>
+            </div>
+            <div x-show="modalMember == 'samantha'">
+              <p>Samantha McKinley, MSW</p>
+              <span class="text-sm font-normal text-gray-500">Registered Social Worker</span>
+            </div>
+            <div x-show="modalMember == 'kathy'">
+              <p>Kathy Morneau, MSW</p>
+              <span class="text-sm font-normal text-gray-500">Registered Social Worker</span>
+            </div>
+            <div x-show="modalMember == 'kimberly'">
+              <p>Kimberly Court, MSW</p>
+              <span class="text-sm font-normal text-gray-500">Registered Social Worker</span>
+            </div>
+            <div x-show="modalMember == 'ashley'">
+              <p>Ashley Laporte</p>
+              <span class="text-sm font-normal text-gray-500">Psychometrist</span>
+            </div>
+            <div x-show="modalMember == 'elizabeth'">
+              <p>Elizabeth Allevato</p>
+              <span class="text-sm font-normal text-gray-500">Registered Psychologist</span>
+            </div>
+            <div x-show="modalMember == 'stephanie'">
+              <p>Stephanie Tellier</p>
+              <span class="text-sm font-normal text-gray-500">Registered Psychotherapist</span>
+            </div>
+            <div x-show="modalMember == 'kathryn'">
+              <p>Kathryn Irabelli, MSW</p>
+              <span class="text-sm font-normal text-gray-500">Registered Social Worker</span>
+            </div>
+            <div x-show="modalMember == 'doris'">
+              <p>Doris Weber</p>
+              <span class="text-sm font-normal text-gray-500">Psychometrist</span>
+            </div>
+            <div x-show="modalMember == 'rob'">
+              <p>Rob Kapetanov</p>
+              <span class="text-sm font-normal text-gray-500">Psychometrist</span>
+            </div>
+            <div x-show="modalMember == 'levi'">
+              <p>Levi Rogers, MSW</p>
+              <span class="text-sm font-normal text-gray-500">Registered Social Worker</span>
+            </div>
+            <div x-show="modalMember == 'maggie'">
+              <p>Maggie Davey</p>
+              <span class="text-sm font-normal text-gray-500">Administrator</span>
+            </div>
+            <div x-show="modalMember == 'irene'">
+              <p>Irene Schiller</p>
+              <span class="text-sm font-normal text-gray-500">Administrator</span>
+            </div>
           </h1>
 
           <button @click="modalOpen = false" class="text-gray-600 focus:outline-none hover:text-gray-700">
@@ -32,11 +90,8 @@
           </button>
       </div>
 
-      <p>With over 20 years of clinical experience working with children and their families, Dr. Heather Hallam-Helbich understands that confidentiality and comfort are important factors in the outcome of assessment and therapy. As a child psychologist, Dr. Heather focuses on your child’s perceptions and behaviours while treating your whole family as a support system.</p>
-
-      <p>Dr. Heather Hallam-Helbich is a licensed clinical psychologist and certified trauma specialist. She works with children as young as 2 years of age, adolescents, and their parents, welcoming families from Windsor, Essex County, and surrounding communities. Through consultation and completion of various assessment techniques, Dr. Heather clarifies children’s problems, diagnoses specific disorders, determines appropriate treatment approaches, and advises parents as needed regarding behaviour management and how to access community resources. Dr. Heather’s particular areas of expertise include the following: diagnosis of Learning Disabilities, Autism, Attention Deficit Hyperactivity Disorder, Behaviour Disorders, Anxiety and Depression; treatment of various disorders such as Anxiety Disorders, Obsessive Compulsive Disorder, Depression, and Adjustment Disorders; education of parents regarding child development and effective behavioural strategies; and support of children and families who are coping with the effects of trauma or divorce.</p>
-
-      <p>Dr. Heather Hallam-Helbich earned her Ph. D. From Wayne State University and has worked in various environments, including Children’s Hospital of Michigan and the Windsor Essex County District School Board. She has been in private practice for 10 years and is a member of both the College of Psychologists of Ontario and the Canadian Psychological Association. Dr. Heather is a practicum supervisor for graduate students studying psychology at the University of Windsor, and is the Clinical Director at Cornerstone Family Care.</p>
+      {% include 'modal-copy.njk' %}
+      
     </div>
   </div>
 </div>
