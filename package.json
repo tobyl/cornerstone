@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-web-starter",
-	"version": "2.0.1",
-	"description": "Eleventy Web Starter is a lightweight Eleventy boilerplate utilising, ESBuild Tailwind and PostCSS",
+	"name": "cornerstone-family-care",
+	"version": "1.0.0",
+	"description": "Cornerstone Family Care site",
 	"scripts": {
 		"clean": "del dist",
 		"dev:postcss": "postcss src/_assets/css/*.css -o src/static/build/styles.min.css --watch --verbose",
@@ -15,7 +15,7 @@
 		"build-ghpages": "run-s clean build:postcss build:scripts build:11ty-ghpages",
 		"build:11ty-ghpages": "npx @11ty/eleventy --pathprefix=/cornerstone/"
 	},
-	"author": "Chris Collins",
+	"author": "Toby Leftly",
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "3.0.0",

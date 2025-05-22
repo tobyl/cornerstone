@@ -3,15 +3,13 @@ module.exports = () => {
 
 	return {
 		"title": "Cornerstone Family Care",
-		"description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PostCSS and esbuild",
-		"url": "https://cornerstonecare.ca",
-		// "baseurl": "/cornerstone",
+		"description": "Welcome to Cornerstone Family Care, a new concept in providing clients with the support they need within a warm and confidential environment.",
+		"url": "https://cornerstonefamilycare.ca",
 		"author": "Toby Leftly",
 		"meta_data": {
 			"twitter": "@tobyleftly",
 			"opengraph_default": "/static/img/opengraph-default.webp"
 		},
 		env: isProd ? 'prod' : 'dev',
-		// baseurl: isProd ? '/cornerstone' : '',
 	}
 }
