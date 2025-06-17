@@ -36,6 +36,7 @@
     var status = document.getElementById("my-form-status")
     var data = new FormData(event.target)
     var concerns = ''
+    var times = ''
 
     var keys = [
       'depression',
@@ -53,6 +54,12 @@
       'adhd',
       'other',
     ]
+
+    var time_keys = [
+      'mornings',
+      'afternoons',
+      'evenings',
+    ]
     
     keys.forEach((key) => {
       if (data.get(key) === 'on') {
@@ -61,7 +68,15 @@
       }
     })
 
+    time_keys.forEach((key) => {
+      if (data.get(key) === 'on') {
+        times += key + ', '
+        data.delete(key)
+      }
+    })
+
     data.append('concerns', concerns)
+    data.append('times', times)
 
     fetch(event.target.action, {
       method: form.method,
@@ -72,7 +87,7 @@
     
     }).then(response => {
       if (response.ok) {
-        status.innerHTML = "Thanks for your submission!"
+        status.style['display'] = 'block'
         innerForm.classList.add("hidden", "transition-all", "duration-500")
         window.scrollTo({ top: 0, behavior: 'smooth' })
         form.reset()

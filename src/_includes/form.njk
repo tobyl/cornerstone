@@ -59,17 +59,19 @@
         </label>
       </div>
     </div>
-    <div class="field">
+    <div class="field multi-checkbox">
       <label>Best time to call:</label>
-      <label>
-        <input type="radio" name="call_time" value="Mornings" /> <span>Mornings</span>
-      </label>
-      <label>
-        <input type="radio" name="call_time" value="Afternoons" /> <span>Afternoons</span>
-      </label>
-      <label>
-        <input type="radio" name="call_time" value="Evenings" /> <span>Evenings</span>
-      </label>
+      <div class="grid">
+        <label for="mornings">
+          <input id="mornings" type="checkbox" name="mornings" /> Mornings
+        </label>
+        <label for="afternoons">
+          <input id="afternoons" type="checkbox" name="afternoons" /> Afternoons
+        </label>
+        <label for="evenings">
+          <input id="evenings" type="checkbox" name="evenings" /> Evenings
+        </label>
+      </div>
     </div>
     <div class="field">
       <label for="message">Message:</label>
@@ -79,5 +81,8 @@
       Submit
     </button>
   </div>
-  <p id="my-form-status"></p>
+  <p id="my-form-status" style="display:none;">
+    <strong class="block text-lg">Thanks for your submission!</strong>
+    <span>Your inquiry is very important to us, and we'll contact you as soon as possible.</strong>
+  </p>
 </form>
