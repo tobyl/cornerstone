@@ -2,7 +2,7 @@
 layout: base.njk
 title: Team
 permalink: /team/
-description: Eleventy Web Starter is a lightweight Eleventy boilerplate utilising esbuild, Tailwind CSS and Post CSS
+description: Cornerstone Family Care | Team
 ---
 
 <main id="main">
@@ -58,6 +58,19 @@ description: Eleventy Web Starter is a lightweight Eleventy boilerplate utilisin
           <p>Amy Wilson comes to Cornerstone with more than 15 years of customer service and office systems experience. Her healthcare training as a Certified Transcriptionist and deep appreciation for client confidentiality is a valuable benefit to our clients and our clinical operations.</p>
           
           <button @click="modalOpen = !modalOpen, modalMember = 'amy'" class="flex items-center justify-center">
+            Read More
+          </button>
+        </div>
+
+        <div class="team-member">
+          <img src="/static/img/amy-tran.png" alt="Dr. Amy Tran">
+          <h3>
+            <span>Dr. Amy Tran</span>
+            <small> Registered Psychologist (Supervised Practice)</small>
+          </h3>
+          <p>Dr. Amy Tran provides therapy and assessment services to children and adolescents using a warm and collaborative approach. She works closely with each child and their family to understand their unique strengths and needs to create a space where youth feel safe, seen, and supported.</p>
+          
+          <button @click="modalOpen = !modalOpen, modalMember = 'amy-tran'" class="flex items-center justify-center">
             Read More
           </button>
         </div>
